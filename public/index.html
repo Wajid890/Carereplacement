@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - Care Replacement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" 
+    integrity="sha512-6f7HT84a/AplPkpSRSKWqbseRTG4aRrhadjZezYQ0oVk/B+nm/US5KzQkyyOyh0Mn9cyDdChRdS9qaxJRHayww==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://carereplacement.com/wp-content/uploads/2023/09/care-replacement-favicon.png" rel="apple-touch-icon">
+    <link href="https://carereplacement.com/wp-content/uploads/2023/09/care-replacement-favicon.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="https://carereplacement.com/wp-content/uploads/2023/09/care-replacement-favicon.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="https://carereplacement.com/wp-content/uploads/2023/09/care-replacement-favicon.png" rel="apple-touch-icon" sizes="144x144">
+    <title>Home - Care Replacement</title>
+    <link href='https://sp-ao.shortpixel.ai' rel='preconnect' />
+    <link rel="alternate" type="application/rss+xml" title="Care Replacement &raquo; Feed" href="https://carereplacement.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Care Replacement &raquo; Comments Feed" href="https://carereplacement.com/comments/feed/" /> <noscript><link rel='stylesheet' id='all-css-f7ef6c90be0ca7d7033be750a1fac2ef' href='https://carereplacement.com/_jb_static/??-eJytVtta2zAMfptdzbiFwtYLvj2LayuNqR0ZWyGEp59yYkmbhnblLpL1/9bZkVUQGguCgmRw5d4WSXqVNBKrI0iVElCSOiWZcoyk0cDEQiSqHdyxwU/JXLbQrmxMGoSxieTOoT4IZ3dRxVp21t4Wn4jj2yOY8l1kUXmoMB56+dgZeGeQsVktSrLOkoV0lnGHeAAzRls2udT+JUlCdGRDIogtfCTfQJKDh4mak7TP6YowVGG9IntBLF0l2u+zpo2sNIkMoxe/5KSSbdnO3zLTMRzxcIqVE1pFLBO44Zh1d4NusR1erVDGcIiNXwIcJ60gjOM07KM1t3Lk4AJXIKhI6VYurxi/xDGTrgS6KSTrHE9UBNK5JD98nmU6uZ/nTELb3t2YDOeia/klr2ZjyWJrZbg3aXluZ11JleW0yrffXRe10ixLGRwqM2ZpAAETifX66ztFiPiNbmdsJFQFCT10k+aWu/QylreNSLn182VYyMDD9v5h85/D59W+sJnVImAow5F4urYZ6cFY1XsxEYJTdbOlYK90PYnhLJzPxvJs4P0iRJOj/xBVGNeRVxbxDKhwNbLbjfO1X8KNi/Z4E1p8lvtShlHZXl5LiLUorOYXlrOnSY6+r/KJE19+YDQiHdqGGEQDmSrddVztOyDaBXcNjLcaxv7Ja90QrYajofXqKiZTF8pz+07/OhZGQpzQZI7fTEY0t/MCNxDd8F9y23g3il7+hmWR0H3xrM0M/iS2/kH/F9sf/7x+2m6fHjer1f0PvXte/wVtZ8vt' type='text/css' media='all' /></noscript>
+    <link rel='stylesheet' id='all-css-f7ef6c90be0ca7d7033be750a1fac2ef' href='https://carereplacement.com/_jb_static/??-eJytVtta2zAMfptdzbiFwtYLvj2LayuNqR0ZWyGEp59yYkmbhnblLpL1/9bZkVUQGguCgmRw5d4WSXqVNBKrI0iVElCSOiWZcoyk0cDEQiSqHdyxwU/JXLbQrmxMGoSxieTOoT4IZ3dRxVp21t4Wn4jj2yOY8l1kUXmoMB56+dgZeGeQsVktSrLOkoV0lnGHeAAzRls2udT+JUlCdGRDIogtfCTfQJKDh4mak7TP6YowVGG9IntBLF0l2u+zpo2sNIkMoxe/5KSSbdnO3zLTMRzxcIqVE1pFLBO44Zh1d4NusR1erVDGcIiNXwIcJ60gjOM07KM1t3Lk4AJXIKhI6VYurxi/xDGTrgS6KSTrHE9UBNK5JD98nmU6uZ/nTELb3t2YDOeia/klr2ZjyWJrZbg3aXluZ11JleW0yrffXRe10ixLGRwqM2ZpAAETifX66ztFiPiNbmdsJFQFCT10k+aWu/QylreNSLn182VYyMDD9v5h85/D59W+sJnVImAow5F4urYZ6cFY1XsxEYJTdbOlYK90PYnhLJzPxvJs4P0iRJOj/xBVGNeRVxbxDKhwNbLbjfO1X8KNi/Z4E1p8lvtShlHZXl5LiLUorOYXlrOnSY6+r/KJE19+YDQiHdqGGEQDmSrddVztOyDaBXcNjLcaxv7Ja90QrYajofXqKiZTF8pz+07/OhZGQpzQZI7fTEY0t/MCNxDd8F9y23g3il7+hmWR0H3xrM0M/iS2/kH/F9sf/7x+2m6fHjer1f0PvXte/wVtZ8vt' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+    <link rel="https://api.w.org/" href="https://carereplacement.com/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://carereplacement.com/wp-json/wp/v2/pages/39234" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://carereplacement.com/xmlrpc.php?rsd" />
+    <link rel='shortlink' href='https://carereplacement.com/' />
+    <link rel="alternate" type="application/json+oembed" href="https://carereplacement.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcarereplacement.com%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://carereplacement.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcarereplacement.com%2F&#038;format=xml" />
+    <meta name="generator" content="Elementor 3.17.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <meta name="generator" content="Powered by Slider Revolution 6.6.15 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <link rel="icon" href="https://i0.wp.com/carereplacement.com/wp-content/uploads/2023/09/cropped-care-replacement-favicon.png?fit=32%2C32&#038;ssl=1" sizes="32x32" />
+    <link rel="icon" href="https://i0.wp.com/carereplacement.com/wp-content/uploads/2023/09/cropped-care-replacement-favicon.png?fit=192%2C192&#038;ssl=1" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://i0.wp.com/carereplacement.com/wp-content/uploads/2023/09/cropped-care-replacement-favicon.png?fit=180%2C180&#038;ssl=1" />
+    <meta name="msapplication-TileImage" content="https://i0.wp.com/carereplacement.com/wp-content/uploads/2023/09/cropped-care-replacement-favicon.png?fit=270%2C270&#038;ssl=1" />
+
+    
+    <meta charset="UTF-8">
+    <link rel="profile" href="//gmpg.org/xfn/11">
+    <link rel="stylesheet" href="css/hospice-care.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://carereplacement.com/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css" />
+    <link href="https://carereplacement.com/wp-content/uploads/2023/09/care-replacement-favicon.png" rel="apple-touch-icon">
+    <link href="https://carereplacement.com/wp-content/uploads/2023/09/care-replacement-favicon.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="https://carereplacement.com/wp-content/uploads/2023/09/care-replacement-favicon.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="https://carereplacement.com/wp-content/uploads/2023/09/care-replacement-favicon.png" rel="apple-touch-icon" sizes="144x144">
+    <meta name="description" content="At Carereplacement.com, we understand that choosing the right hospice care for your loved one is a deeply personal and important decision. That&#039;s why we&#039;re" />
+    <link rel="alternate" type="application/rss+xml" title="Care Replacement &raquo; Feed" href="https://carereplacement.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Care Replacement &raquo; Comments Feed" href="https://carereplacement.com/comments/feed/" />
+    <link rel='stylesheet' id='all-css-4ddd0891bfcd9a0a708d97a908aaee5f' href='https://carereplacement.com/_jb_static/??-eJytVt16mzAMfZtdzXXyremWi359FscWwY2NXFuU0qefMKGDlLCk6R2SdY71b2QThMaKoCIZXL23VZJeJY3E6ghSpQSUpE5JphIjaTQwsRCJWgd3bPBTMpettKs7kw5hbCK5c6gPwtldVLGVvbW31Qfi9PYIpn4TRVQeGoyHo3zqDLwxyNiiFTVZZ8lCOsu4QzyAGaMtm1xq/5wkITqyIRHEDB/JN5CU4GGi5iTtS7oiDFVZr8heEEtfifx91rSTlSZRYPTit5xUMpft/C0zHcMRD6fYOKFVxDqBG45ZdzfoFtvhxQplDIfY+SXAcdIqwjhOwz5acytHCS5wBYKKlG7l8orxSxwz6Uqgu0KyzvFERSBdSvLD51mmT/fznEnI7d2PyXAu+pZf8mo2liJmK8O9SctzO+tKaiynVb7+6bsoS7MsdXCozJilAwRMJNbr/98pQsRvdLtgI6EaSOihnzS33KWXsbzei1RaP1+GhQw8rFa/Vl8cPq/2lS2sFgFDHU7Ez2ubkR6MVUcvJkJwqu22FOyVbicxnIXz2VieDfy4CNGU6N9FE8Z15JVFPAMqXI3sd+N87Zdw46JtbkKLj3JfyjAq2/NLDbEVldX8wnL2NMnR91U+ceLrd4xGpENuiEE0UKjaXceV3wGRF9w1MN5qGI9PXnZDZA1HQ5+He4nItJXy3L3Tn46vTWOnOMrfMNsJ3b9X6Mk/rh+22/vtdrPZ/NC7x/VfnZySTA==' type='text/css' media='all' />
+    <link rel="https://api.w.org/" href="https://carereplacement.com/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://carereplacement.com/wp-json/wp/v2/pages/60030" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://carereplacement.com/xmlrpc.php?rsd" />
+    <link rel='shortlink' href='https://carereplacement.com/?p=60030' />
+    <link rel="alternate" type="application/json+oembed" href="https://carereplacement.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcarereplacement.com%2Fhospice-care%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://carereplacement.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcarereplacement.com%2Fhospice-care%2F&#038;format=xml" />
+    <link rel="icon" href="https://i0.wp.com/carereplacement.com/wp-content/uploads/2023/09/cropped-care-replacement-favicon.png?fit=32%2C32&#038;ssl=1" sizes="32x32" />
+    <link rel="icon" href="https://i0.wp.com/carereplacement.com/wp-content/uploads/2023/09/cropped-care-replacement-favicon.png?fit=192%2C192&#038;ssl=1" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://i0.wp.com/carereplacement.com/wp-content/uploads/2023/09/cropped-care-replacement-favicon.png?fit=180%2C180&#038;ssl=1" />
+    <meta name="msapplication-TileImage" content="https://i0.wp.com/carereplacement.com/wp-content/uploads/2023/09/cropped-care-replacement-favicon.png?fit=270%2C270&#038;ssl=1" />
+    <style id="wpforms-css-vars-root">
+               :root {
+            --theme-color1: #3473C8;
+            --theme-color2: #183172;
+            --theme-color3: #545454;
+        }
+
+        #wpforms-submit-60115 {
+            background-color: #183172;
+        }
+ 
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="root"></div>
+    </div>
+
+  <link rel='stylesheet' id='all-css-fe7cf48ce93d363ede90270acbeefd97' href='https://carereplacement.com/_jb_static/??-eJyNjsEKwjAQRP/Gk3FJK9Ucit/SJksbSLohs7Xg11t6EkTw+IaZx9BWjJdFeVFaS5IhgDhx3lkqeYCKQE3rrrfmsuOZ/htY133VS1qnuIDyAC+6x5WNhFnyy2yFBoAVhwGzVPUSGDQmmUyK0J+2yk+kGLhSWccU/aeo4njxyL3t3N3ZpnX25MfevgFkilof' type='text/css' media='all' />
+  <script src="js/hospice-care.js"></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+  <script defer type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_14f9ed253b85ec5b8024a48ec626e07e.js?ver=1699470276" id="simple-likes-public-js-js" defer></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_601cdc7b68cf50e626de02068a88e656.js?ver=1699470276" id="tm-elementor-script-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.17.3" id="font-awesome-4-shim-js" defer></script>
+  <script type="rocketlazyloadscript">function setREVStartSize(e){ //window.requestAnimationFrame(function() { window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW; window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH; try { var pw = document.getElementById(e.c).parentNode.offsetWidth,
+      newh; pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw; e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw); e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw); e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+      e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh); e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide); e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide); e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0
+      : parseInt(e.mh,0); if(e.layout==="fullscreen" || e.l==="fullscreen") newh = Math.max(e.mh,window.RSIH); else{ e.gw = Array.isArray(e.gw) ? e.gw : [e.gw]; for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1]; e.gh =
+      e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el; e.gh = Array.isArray(e.gh) ? e.gh : [e.gh]; for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1]; var nl = new Array(e.rl.length),
+      ix = 0, sl; e.tabw = e.tabhide>=pw ? 0 : e.tabw; e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw; e.tabh = e.tabhide>=pw ? 0 : e.tabh; e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh; for (var i in e.rl) nl[i] = e.rl[i]
+      <window.RSIW ? 0 : e.rl[i]; sl=n l[0];
+          for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;} var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]); newh = (e.gh[ix] * m) + (e.tabh + e.thumbh); } var el = document.getElementById(e.c); if (el!==null && el) el.style.height
+          = newh+"px"; el = document.getElementById(e.c+"_wrapper"); if (el!==null && el) { el.style.height = newh+"px"; el.style.display = "block"; } } catch(e){ console.log("Failure at Presize of Slider:" + e) } //}); };
+  </script>
+  <!-- <script type="rocketlazyloadscript">window.RS_MODULES = window.RS_MODULES || {}; window.RS_MODULES.modules = window.RS_MODULES.modules || {}; window.RS_MODULES.waiting = window.RS_MODULES.waiting || []; window.RS_MODULES.defered = true; window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {}; window.RS_MODULES.type = 'compiled';</script>
+  <script type="rocketlazyloadscript" data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script>
+  <script defer data-noptimize="1" src='https://carereplacement.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js?ao_version=3.1.9'></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.2" id="jquery-ui-datepicker-js" defer></script> -->
+  
+  <!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/booked/assets/js/spin.min.js?ver=2.0.1" id="booked-spin-js-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/min/1/wp-content/plugins/booked/assets/js/spin.jquery.js?ver=1699470276" id="booked-spin-jquery-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/booked/assets/js/tooltipster/js/jquery.tooltipster.min.js?ver=3.3.0" id="booked-tooltipster-js" defer></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_c13bd5d73e6ae7f98be6baa571a957ed.js?ver=1699470276" id="booked-functions-js" defer></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_46e7d09e33282ff395491162ac9c06e6.js?ver=1699515431" id="jetpack-photon-js" defer></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_73e40bc1184958ee16a59cbed591cb08.js?ver=1699470276" id="swv-js" defer></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_cc5e69ac94305dc03d3aa9ec854e388b.js?ver=1699470276" id="contact-form-7-js" defer></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_0e23f9635a7293a203d030b9cbc2561e.js?ver=1699470276" id="booked-fea-js-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/mascot-core/assets/js/plugins/owl-carousel/owl.carousel.min.js?ver=6.4.1" id="owl-carousel-js" defer></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_19327741bd10e99c3639777ae0e59ea5.js?ver=1699470276" id="jquery-owl-filter-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/mascot-core/assets/js/plugins/owl.carousel2.thumbs.min.js?ver=6.4.1" id="owl-carousel2-thumbs-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/mascot-core/assets/js/plugins/jquery.animatenumbers.min.js?ver=6.4.1" id="jquery-animatenumbers-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/mascot-core/assets/js/plugins/jquery.easypiechart.min.js?ver=6.4.1" id="jquery-easypiechart-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/mascot-core/assets/js/plugins/jquery.tilt.min.js?ver=6.4.1" id="jquery-tilt-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/qi-addons-for-elementor/assets/js/main.min.js?ver=6.4.1" id="qi-addons-for-elementor-script-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/mascot-core/assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js?ver=6.4.1" id="magnific-popup-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/mascot-core/assets/js/plugins/vivus.min.js?ver=6.4.1" id="vivus-js" defer></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_91be898ab8b17a786bb45b62e411dfc6.js?ver=1699470276" id="jquery-countto-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.2" id="jquery-ui-tabs-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/jquery/ui/accordion.min.js?ver=1.13.2" id="jquery-ui-accordion-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17" id="mediaelement-core-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.4.1" id="mediaelement-migrate-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.4.1" id="wp-mediaelement-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.17.3" id="elementor-webpack-runtime-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.17.3" id="elementor-frontend-modules-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.17.3" id="elementor-frontend-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/themes/odhomz-wp/assets/js/plugins/popper.min.js?ver=6.4.1" id="popper-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/themes/odhomz-wp/assets/js/plugins/bootstrap.min.js?ver=6.4.1" id="bootstrap-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/qi-addons-for-elementor/inc/masonry/assets/js/plugins/isotope.pkgd.min.js?ver=6.4.1" id="isotope-js" defer></script>
+    <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/themes/odhomz-wp/assets/js/plugins/jquery-scrolltofixed-min.js?ver=6.4.1" id="jquery-scrolltofixed-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/themes/odhomz-wp/assets/js/plugins/jquery.easing.min.js?ver=6.4.1" id="jquery-easing-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_016ffb98b63cc4c6818198051cc3cdba.js?ver=1699470276" id="jquery-fitvids-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/themes/odhomz-wp/assets/js/plugins/jquery.localscroll.min.js?ver=6.4.1" id="jquery-localscroll-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/themes/odhomz-wp/assets/js/plugins/jquery.scrollto.min.js?ver=6.4.1" id="jquery-scrollto-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/mascot-core/assets/js/plugins/jquery.paroller.min.js?ver=6.4.1" id="jquery-paroller-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_ed7b5f22ed666994b36a5c5aa5b69474.js?ver=1699470276" id="jquery-lettering-js" defer></script>
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_af77ae6fa979c96bc52eca1a2baf9ef3.js?ver=1699470276" id="jquery-textillate-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/themes/odhomz-wp/assets/js/plugins/jquery-nice-select/jquery.nice-select.min.js?ver=6.4.1" id="jquery-nice-select-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/themes/odhomz-wp/assets/js/plugins/wow.min.js?ver=6.4.1" id="wow-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/wpforms-user-journey/assets/js/wpforms-user-journey.min.js?ver=1.0.6" id="wpforms-user-journey-js" defer></script> -->
+  <!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js" defer></script>
+    <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script> -->
+  <!-- <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_fc644604e99ce0445fc6181ad1b3ce70.js?ver=1699470276" id="qi-addons-for-elementor-elementor-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.13.1" id="elementor-pro-webpack-runtime-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.13.1" id="elementor-pro-frontend-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.13.1" id="pro-elements-handlers-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-includes/js/wp-util.min.js?ver=6.4.1" id="wp-util-js" defer></script>
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/wpforms/assets/js/integrations/elementor/frontend.min.js?ver=1.8.3.2" id="wpforms-elementor-js" defer></script> -->
+
+
+<noscript><style>.lazyload{display:none;}</style></noscript>
+<noscript><link rel='stylesheet' id='all-css-3220e826ffca93adafe925c97b31f7d6' href='https://carereplacement.com/_jb_static/??-eJydjtEKwjAMRf/GJ7tQlWkfxG/Zuk4LbROSzoFfbx0KA5kMXwIJN+dcGElZTNmlDAMFbDoBF1wsOzJYESCUrPbmcNxVZd3C7IHCcPVJIDZiMZczO4XdDeNDjQSNiMsyMSxlaANep6FeFsdftB96ber/5XJDzhY7J2+9l7xIY3eX4Es9oKEN3s5BLMstRuqRo8zjPU+ZDmJxc/pEVD+EUEWf1rKIcTXvEs+6Niejd3ujN7Y96yf7GbO/' type='text/css' media='all' /></noscript>
+<link rel='stylesheet' id='all-css-3220e826ffca93adafe925c97b31f7d6'  href='https://carereplacement.com/_jb_static/??-eJydjtEKwjAMRf/GJ7tQlWkfxG/Zuk4LbROSzoFfbx0KA5kMXwIJN+dcGElZTNmlDAMFbDoBF1wsOzJYESCUrPbmcNxVZd3C7IHCcPVJIDZiMZczO4XdDeNDjQSNiMsyMSxlaANep6FeFsdftB96ber/5XJDzhY7J2+9l7xIY3eX4Es9oKEN3s5BLMstRuqRo8zjPU+ZDmJxc/pEVD+EUEWf1rKIcTXvEs+6Niejd3ujN7Y96yf7GbO/' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<script defer src="data:text/javascript;base64,aWYobmF2aWdhdG9yLnVzZXJBZ2VudC5tYXRjaCgvTVNJRXxJbnRlcm5ldCBFeHBsb3Jlci9pKXx8bmF2aWdhdG9yLnVzZXJBZ2VudC5tYXRjaCgvVHJpZGVudFwvN1wuLio/cnY6MTEvaSkpe3ZhciBocmVmPWRvY3VtZW50LmxvY2F0aW9uLmhyZWY7aWYoIWhyZWYubWF0Y2goL1s/Jl1ub3dwcm9ja2V0Lykpe2lmKGhyZWYuaW5kZXhPZigiPyIpPT0tMSl7aWYoaHJlZi5pbmRleE9mKCIjIik9PS0xKXtkb2N1bWVudC5sb2NhdGlvbi5ocmVmPWhyZWYrIj9ub3dwcm9ja2V0PTEifWVsc2V7ZG9jdW1lbnQubG9jYXRpb24uaHJlZj1ocmVmLnJlcGxhY2UoIiMiLCI/bm93cHJvY2tldD0xIyIpfX1lbHNle2lmKGhyZWYuaW5kZXhPZigiIyIpPT0tMSl7ZG9jdW1lbnQubG9jYXRpb24uaHJlZj1ocmVmKyImbm93cHJvY2tldD0xIn1lbHNle2RvY3VtZW50LmxvY2F0aW9uLmhyZWY9aHJlZi5yZXBsYWNlKCIjIiwiJm5vd3Byb2NrZXQ9MSMiKX19fX0="></script>
+<script src="js/app.js"></script>
+<script defer data-noptimize="1" src='https://carereplacement.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js?ao_version=3.1.9'></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/plugins/qi-addons-for-elementor/assets/js/main.min.js?ver=6.4.1" id="qi-addons-for-elementor-script-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_b9e49e5fa874676aef5838038876ee14.js?ver=1699470276"  defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_b4dd3c58465750d2b90f5356012ede31.js?ver=1699470276" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_b639eebac04efd0377953f894feb23a5.js?ver=1699470276" id="menuzord-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://carereplacement.com/wp-content/cache/autoptimize/js/autoptimize_single_3facb81662e5f1ca87d026ee8b580441.js?ver=1699470276" id="jquery-appear-js" defer></script>
+
+</body>
+</html>
